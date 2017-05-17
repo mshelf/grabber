@@ -1,0 +1,16 @@
+{
+  "name": "grabber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "all": "node index.js --reset-all"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "glob": "^7.1.1",
+    "rimraf": "^2.6.1"
+  }
+}
