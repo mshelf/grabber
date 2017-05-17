@@ -5,7 +5,10 @@ const Promise = require("bluebird");
 
 const config = require("./config");
 const ArtistsRegistry = require("./artists-registry");
+const RequestPool = require("./request-pool");
+
 const grabLocal = require("./grab-local");
+const grabYandex = require("./grab-yandex");
 
 const params = parseArgv();
 
@@ -18,6 +21,8 @@ fs.mkdirSync(config.databaseDir);
 // run grabbers
 console.log("Run grabbers");
 const artistsRegistry = new ArtistsRegistry(config.databaseDir);
+const requestPool = new RequestPool(10);
+
 const grabbersPromises = config.grabbers.map(grabberConfig => {
     return runGrabber(grabberConfig);
 });
@@ -38,6 +43,9 @@ function runGrabber(grabberConfig) {
     switch (grabberConfig.type) {
         case "local":
             return grabLocal(grabberConfig, artistsRegistry);
+            break;
+        case "yandex":
+            return grabYandex(grabberConfig, artistsRegistry, requestPool);
             break;
         default:
             return Promise.rejected("Unknown grabber type: " + grabberConfig.type);
