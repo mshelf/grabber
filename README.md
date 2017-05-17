@@ -1,2 +1,2 @@
-# grabber
-Artists lists grabber
+# MShelf Grabber
+Artists lists grabber for MShelf Radio.
