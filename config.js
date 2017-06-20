@@ -20,7 +20,7 @@ module.exports = {
                 {
                     genre: "rusrock",
                     channels: ["Genres\\Rock\\Russian Rock"],
-                    pages: 2
+                    pages: 1
                 },
                 {
                     genre: "post-rock",
@@ -35,7 +35,7 @@ module.exports = {
                 {
                     genre: "prog-rock",
                     channels: ["Genres\\Rock\\Progressive Rock"],
-                    pages: 20
+                    pages: 10
                 },
                 {
                     genre: "folkmetal",
@@ -55,12 +55,12 @@ module.exports = {
                 {
                     genre: "ska",
                     channels: ["Genres\\Ska"],
-                    pages: 5
+                    pages: 2
                 },
                 {
                     genre: "classicmetal",
                     channels: ["Genres\\Metal\\Heavy Metal"],
-                    pages: 5
+                    pages: 2
                 },
                 {
                     genre: "progmetal",
