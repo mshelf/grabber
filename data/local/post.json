@@ -1,5 +1,5 @@
 {
-  "channels": ["Rock\\Post Rock", "Metal\\Post Metal"],
+  "channels": ["Genres\\Rock\\Post Rock", "Genres\\Metal\\Post Metal"],
   "artists": [
     "Sólstafir",
     "Lost in Kiev",
