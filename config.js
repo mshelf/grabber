@@ -25,7 +25,7 @@ module.exports = {
                 {
                     genre: "post-rock",
                     channels: ["Genres\\Rock\\Post Rock"],
-                    pages: 10
+                    pages: 3
                 },
                 {
                     genre: "pop",
@@ -50,7 +50,7 @@ module.exports = {
                 {
                     genre: "punk",
                     channels: ["Genres\\Rock\\Punk Rock"],
-                    pages: 10
+                    pages: 5
                 },
                 {
                     genre: "ska",
